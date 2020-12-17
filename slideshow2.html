@@ -1,0 +1,305 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: blue;
+  font-weight: bold;
+  font-size: 40px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: black;
+  font-size: 30px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+.responsive {
+  width: 100%;
+  max-width: 200px;
+  height: 100%;
+  max-height: 200px;
+}
+.topnav {
+  background-color: #00ffff;
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: white;
+  color: black;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 15px;
+}
+    /*body
+    {
+          background-image: url('logo.png');
+
+background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
+    }*/
+    .dropbtn {
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+
+</style>
+
+</head>
+<body>
+
+    <img src="logo-min.jpg" align="left" height="50" width="50"> 
+    
+    <h1 style="color: rosybrown;font-size: 300%">STUDENT INFORMATION</h1>
+
+<div class="topnav">
+  <a class="active" href="#home">Home</a>
+  <a href="about.html">About</a>
+    <a href="slideshow2.html">Student</a>
+    <a href="login.html">Teacher</a>
+  
+<a href="register.html">Register</a>
+<a href="activities1.html">Activities</a>
+<a href="acheivements.html">Achievements</a>
+<a href="contact.html">Contact US!!</a>
+    <a href="gallery.html">Gallery</a>
+</div>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <a href="time.html"><img src="tm1.jpeg" style="width:60%"></a>
+  <div class="text" style="color: olivedrab;font-family: sans-serif">time table</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <a href="atten.html"><img src="att1.jpeg" style="width:95%"></a>
+  <div class="text" style="color:paleturquoise;font-family: sans-serif">attendance</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+    <a href="syllabuspaper.html"><img src="syl2.jpeg" style="width:60%"></a>
+  <div class="text" style="color: orange;font-family: sans-serif">syllabus</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 3</div>
+    <a href="#"><img src="exd.jpeg" style="width:90%"></a>
+  <div class="text" style="color: olivedrab;font-family: sans-serif">exam dates</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 3</div>
+    <a href="fee.html"><img src="fee.jpeg" style="width:90%"></a>
+  <div class="text" style="color:cadetblue;font-family: sans-serif">fees</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">6 / 3</div>
+    <a href="res.html"><img src="res.jpeg" style="width:90%"></a>
+  <div class="text" style="color: rebeccapurple;font-family: sans-serif">results</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">7 / 3</div>
+    <a href="student.html"> <img src="stp.jpeg" style="width:90%"></a>
+  <div class="text" style="color:lightsalmon;font-family: sans-serif">student profile</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">8 / 3</div>
+    <a href="placements.html"><img src="plc1.jpeg" style="width:90%"></a>
+  <div class="text" style="color: indigo;font-family: sans-serif">placements</div>
+</div>
+
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span>
+  <span class="dot" onclick="currentSlide(7)"></span>
+  <span class="dot" onclick="currentSlide(8)"></span>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</body>
+</html>
